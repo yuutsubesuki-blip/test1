@@ -1,0 +1,46 @@
+承知いたしました。HTML5の基本的な構造を使った、「開発中・・・」というメッセージだけを表示するシンプルなHTMLファイルを以下に作成します。
+
+📄 開発中メッセージを表示するHTML5ファイル
+
+このコードを任意のテキストエディタ（メモ帳、VS Codeなど）にコピー＆ペーストし、ファイル名を index.html などとして保存すれば、ブラウザで開くことができます。
+HTML
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>開発中</title>
+    <style>
+        /* スタイル：画面中央に大きくメッセージを表示 */
+        body {
+            display: flex;
+            justify-content: center; /* 水平方向の中央揃え */
+            align-items: center; /* 垂直方向の中央揃え */
+            min-height: 100vh; /* 画面全体の高さを確保 */
+            margin: 0; /* デフォルトのマージンをリセット */
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* 背景色 */
+        }
+
+        .message-box {
+            padding: 30px 50px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em; /* フォントサイズを大きく */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box">
+        <h1>開発中・・・</h1>
+    </div>
+</body>
+</html>
